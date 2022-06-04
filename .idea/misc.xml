@@ -3,30 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android Studio Project/PE3/app/src/main/res/drawable/bottom_login.xml" value="0.26979166666666665" />
-        <entry key="..\:/Android Studio Project/PE3/app/src/main/res/drawable/bottom_normal.xml" value="0.26979166666666665" />
-        <entry key="..\:/Android Studio Project/PE3/app/src/main/res/drawable/bottom_register.xml" value="0.26979166666666665" />
-        <entry key="..\:/Android Studio Project/PE3/app/src/main/res/drawable/buttom_circle_login.xml" value="0.26979166666666665" />
-        <entry key="..\:/Android Studio Project/PE3/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/Android Studio Project/PE3/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Android Studio Project/PE3/app/src/main/res/layout/activity_register.xml" value="0.2390625" />
-        <entry key="..\:/Android Studio Project/PE3/app/src/main/res/layout/activity_retrieve_password_part1.xml" value="0.25364583333333335" />
-        <entry key="..\:/Android Studio Project/PE3/app/src/main/res/layout/activity_retrieve_password_part2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Android Studio Project/PE3/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/activity_health_assessment.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/activity_history_place.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/activity_login.xml" value="0.19270833333333334" />
         <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/activity_main.xml" value="0.2545289855072464" />
-        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18958333333333333" />
-        <entry key="app/src/main/res/drawable/bottom_black.xml" value="0.33489583333333334" />
-        <entry key="app/src/main/res/drawable/bottom_edittext.xml" value="0.33489583333333334" />
-        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.18958333333333333" />
-        <entry key="app/src/main/res/layout/activity_health_assessment.xml" value="0.1734375" />
-        <entry key="app/src/main/res/layout/activity_history_place.xml" value="0.16858425565374865" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2369729906733912" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/activity_register.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/activity_retrieve_password_part1.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/activity_retrieve_password_part2.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/activity_scanner.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/activity_user_information.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/fragment_a.xml" value="0.2" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/home_china_fragment.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/home_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/qaa_fragment.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/search_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/layout/tips_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/menu/menu.xml" value="0.2" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PE3/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.21614583333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15501519756838905" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.15501519756838905" />
-        <entry key="app/src/main/res/layout/activity_retrieve_password_part1.xml" value="0.3696314893198943" />
-        <entry key="app/src/main/res/layout/activity_retrieve_password_part2.xml" value="0.15501519756838905" />
-        <entry key="app/src/main/res/layout/activity_scanner.xml" value="0.22282523017286407" />
-        <entry key="app/src/main/res/layout/activity_user_information.xml" value="0.35553381442562393" />
-        <entry key="app/src/main/res/menu/navigation.xml" value="0.1734375" />
       </map>
     </option>
   </component>
