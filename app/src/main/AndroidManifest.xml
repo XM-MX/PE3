@@ -10,18 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PE3">
         <activity
-            android:name=".RetrievePasswordPart2Activity"
-            android:exported="true" />
-        <activity
-            android:name=".RetrievePasswordPart1Activity"
-            android:exported="true" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -30,6 +18,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RetrievePasswordPart2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".RetrievePasswordPart1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -4,20 +4,25 @@
     android:id="@+id/navigation_home"
     android:icon="@drawable/home2"
     android:title="Home"/>
+
 <item
     android:id="@+id/navigation_location"
     android:icon="@drawable/location1"
     android:title="Location" />
+
 <item
     android:id="@+id/navigation_scan"
     android:icon="@drawable/scan2"
     android:title="Scan"/>
+
 <item
     android:id="@+id/navigation_qa"
     android:icon="@drawable/qa2"
     android:title="QA"/>
-    <item
-        android:id="@+id/navigation_user"
-        android:icon="@drawable/user2"
-        android:title="User"/>
+
+<item
+    android:id="@+id/navigation_user"
+    android:icon="@drawable/user2"
+    android:title="User"/>
+
 </menu>
