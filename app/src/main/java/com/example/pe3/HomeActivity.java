@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import com.example.pe3.Fragment.BlankFragment;
+import com.example.pe3.Fragment.ChinaFragment;
 import com.example.pe3.Fragment.HomeFragment;
 import com.example.pe3.Fragment.LocationFragment;
 import com.example.pe3.Fragment.QAFragment;
@@ -33,7 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         //bind click event for widget
         setBottomNavigationView();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new BlankFragment()).commit();
     }
 
 
@@ -50,7 +52,7 @@ public class HomeActivity extends AppCompatActivity {
                 //switch fragment
                 switch (item.getItemId()){
                     case R.id.navigation_home:
-                        selectFragment = new HomeFragment();
+                        selectFragment = new BlankFragment();
                         break;
                     case R.id.navigation_location:
                         selectFragment = new LocationFragment();

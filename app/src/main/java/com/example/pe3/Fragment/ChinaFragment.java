@@ -2,34 +2,42 @@ package com.example.pe3.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import com.example.pe3.ChinaActivity;
 import com.example.pe3.HealthAssessmentActivity;
-import com.example.pe3.TipsActivity;
 import com.example.pe3.R;
+import com.example.pe3.TipsActivity;
+import com.google.android.material.tabs.TabLayout;
 
-public class HomeFragment extends Fragment {
+import java.util.List;
 
-    private String mParam1;
-    private String mParam2;
-
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+public class ChinaFragment extends Fragment {
 
     private ImageButton btn_china;
     private ImageButton btn_ha;
     private ImageButton btn_tips;
 
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
+    private ViewPager mViewPager;
+    private TabLayout mTabLayout;
+
+    private List<Fragment> mFragmentList;
+    private List<String> mTitleList;
+
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+    public static ChinaFragment newInstance(String param1, String param2) {
+        ChinaFragment fragment = new ChinaFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -40,7 +48,7 @@ public class HomeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_china, container, false);
 
         btn_china = view.findViewById(R.id.imageView5);
         btn_ha = view.findViewById(R.id.imageView3);
@@ -79,7 +87,5 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
     }
-
 }

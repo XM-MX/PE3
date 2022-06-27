@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.HomeFragment">
+    tools:context=".Fragment.ChinaFragment">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -14,14 +14,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/malaysia_2" />
+        app:srcCompat="@drawable/china_2" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="Home Page"
+        android:text="Stactics"
         android:textColor="#000000"
         android:textSize="34sp"
         android:textStyle="normal"
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="COVID-19 DATA OF MALAYSIA"
+        android:text="COVID-19 DATA OF CHINA"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -110,7 +110,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/malaysia_1" />
+        app:srcCompat="@drawable/china_1" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_ac_bottomNavigationView"
