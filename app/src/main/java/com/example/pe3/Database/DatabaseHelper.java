@@ -92,9 +92,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     // To check the username and phone number
-    public Boolean checkEmail(String username, String phone){
+    public Boolean checkEmail(String username, String email){
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("SELECT * FROM user WHERE username = ? and phone = ?", new String[]{username, phone});
+        Cursor cursor = MyDB.rawQuery("SELECT * FROM user WHERE username = ? and email = ?", new String[]{username, email});
         if(cursor.getCount() > 0)
             return true;
         else

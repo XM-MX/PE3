@@ -42,7 +42,7 @@
         android:hint="Plear Enter Your Password" />
 
     <CheckBox
-        android:id="@+id/remembername"
+        android:id="@+id/cb_remember"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
