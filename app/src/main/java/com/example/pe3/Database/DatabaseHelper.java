@@ -71,6 +71,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
+    // To modify data
+    public Boolean modifyPersonalInformation(String username, String age, String gender, String phone, String email){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("age", age);
+        contentValues.put("gender", gender);
+        contentValues.put("phone", phone);
+        contentValues.put("email", email);
+        MyDB.update("user", contentValues, "username=?", new String []{username});
+        //MyDB.close();
+        return true;
+    }
+
     // To check the username
     public Boolean checkUsername(String username){
         SQLiteDatabase MyDB = this.getWritableDatabase();
