@@ -34,10 +34,13 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center"
-            android:text="Qusetion1 \nDo you have a headache, sore throat or congestion? \nYes No"
+            android:text="Qusetion1 \nDo you have a headache, sore throat or congestion?"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <RadioGroup
+            />
 
         <TableRow
             android:layout_width="match_parent"
@@ -48,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center"
-            android:text="Qusetion2 \nDo you have a fever？\nYes No"
+            android:text="Qusetion2 \nDo you have a fever？"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -60,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center"
-            android:text="Qusetion3 \nDo you have a dry cough and feel chest tightness？\nYes No"
+            android:text="Qusetion3 \nDo you have a dry cough and feel chest tightness？"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -73,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center"
-            android:text="Qusetion4 \nDo you feel pain all over your body？\nYes No"
+            android:text="Qusetion4 \nDo you feel pain all over your body？"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -86,24 +89,10 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center"
-            android:text="Qusetion5 \nDo you feel pain all over your body？\nYes No"
+            android:text="Qusetion5 \nDo you feel pain all over your body？"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
     </TableLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/main_ac_bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        app:itemIconSize="20dp"
-        app:itemTextColor="@color/black"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
