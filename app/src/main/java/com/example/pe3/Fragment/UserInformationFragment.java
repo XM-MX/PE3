@@ -86,8 +86,6 @@ public class UserInformationFragment extends Fragment {
                 else {
                     Toast.makeText(getActivity(), "You modified your account unsuccessfully!", Toast.LENGTH_LONG).show();
                 }
-
-                getActivity().finish();
             }
         });
 
