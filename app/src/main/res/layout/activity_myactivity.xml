@@ -1,15 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvCases"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"/>
+        android:padding="20dp"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GLOBAL COVID-19 STATICS"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cases"
+            android:textSize="30sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tvCases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today Cases"
+            android:textSize="30sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tvTodayCases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deaths"
+            android:textSize="30sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tvDeaths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today Deaths"
+            android:textSize="30sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tvTodayDeaths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recovered"
+            android:textSize="30sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tvRecovered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today Recovered"
+            android:textSize="30sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tvTodayRecovered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

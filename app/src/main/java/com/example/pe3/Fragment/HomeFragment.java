@@ -13,7 +13,6 @@ import androidx.fragment.app.Fragment;
 
 import com.example.pe3.HealthAssessmentActivity;
 import com.example.pe3.Retrofit.MYActivity;
-import com.example.pe3.Retrofit.MYActivity1;
 import com.example.pe3.TipsActivity;
 import com.example.pe3.R;
 

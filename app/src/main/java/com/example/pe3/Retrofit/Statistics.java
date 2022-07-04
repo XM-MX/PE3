@@ -16,19 +16,39 @@ public class Statistics {
     @Expose
     private String deaths;
 
+    @SerializedName("todayDeaths")
+    @Expose
+    private String todayDeaths;
+
+    @SerializedName("recovered")
+    @Expose
+    private String recovered;
+
+    @SerializedName("todayRecovered")
+    @Expose
+    private String todayRecovered;
+
     public Statistics(
             String cases,
             String todayCases,
-            String deaths
+            String deaths,
+            String todayDeaths,
+            String recovered,
+            String todayRecovered
     ) {
         this.cases = cases;
         this.todayCases = todayCases;
         this.deaths = deaths;
+        this.todayDeaths = todayDeaths;
+        this.recovered = recovered;
+        this.todayRecovered = todayRecovered;
     }
 
     String getCases() { return this.cases; }
-    //void SetCases(String cases) { this.cases = cases; }
     String getTodayCases() { return this.todayCases; }
     String getDeaths() { return this.deaths; }
+    String getTodayDeaths() { return this.todayDeaths; }
+    String getRecovered() { return this.recovered; }
+    String getTodayRecovered() { return this.todayRecovered; }
 
 }

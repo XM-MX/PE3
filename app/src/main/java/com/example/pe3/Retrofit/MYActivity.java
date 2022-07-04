@@ -20,6 +20,11 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MYActivity extends AppCompatActivity {
 
     TextView tvCases;
+    TextView tvTodayCases;
+    TextView tvDeaths;
+    TextView tvTodayDeaths;
+    TextView tvRecovered;
+    TextView tvTodayRecovered;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +32,11 @@ public class MYActivity extends AppCompatActivity {
         setContentView(R.layout.activity_myactivity);
 
         tvCases = findViewById(R.id.tvCases);
+        tvTodayCases = findViewById(R.id.tvTodayCases);
+        tvDeaths = findViewById(R.id.tvDeaths);
+        tvTodayDeaths = findViewById(R.id.tvTodayDeaths);
+        tvRecovered = findViewById(R.id.tvRecovered);
+        tvTodayRecovered = findViewById(R.id.tvTodayRecovered);
         fetchApiDataUsingRetrofit();
 
     }
@@ -51,6 +61,11 @@ public class MYActivity extends AppCompatActivity {
             public void onResponse(Call<Statistics> call, Response<Statistics> response) {
                 //bind the data from the API to the views
                 tvCases.setText(response.body().getCases()); // return cases value
+                tvTodayCases.setText(response.body().getTodayCases());
+                tvDeaths.setText(response.body().getDeaths());
+                tvTodayDeaths.setText(response.body().getTodayDeaths());
+                tvRecovered.setText(response.body().getRecovered());
+                tvTodayRecovered.setText(response.body().getTodayRecovered());
             }
 
             //failure
