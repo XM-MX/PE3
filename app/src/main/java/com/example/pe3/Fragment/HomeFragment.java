@@ -11,8 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.pe3.ChinaActivity;
 import com.example.pe3.HealthAssessmentActivity;
+import com.example.pe3.Retrofit.MYActivity;
+import com.example.pe3.Retrofit.MYActivity1;
 import com.example.pe3.TipsActivity;
 import com.example.pe3.R;
 
@@ -24,9 +25,7 @@ public class HomeFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    private ImageButton btn_china;
-    private ImageButton btn_ha;
-    private ImageButton btn_tips;
+    private ImageButton btn_ha, btn_tips, btn_world;
 
     public static HomeFragment newInstance(String param1, String param2) {
         HomeFragment fragment = new HomeFragment();
@@ -42,9 +41,9 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        btn_china = view.findViewById(R.id.imageView5);
         btn_ha = view.findViewById(R.id.imageView3);
         btn_tips = view.findViewById(R.id.imageView4);
+        btn_world = view.findViewById(R.id.btn_world);
 
         return view;
     }
@@ -53,14 +52,6 @@ public class HomeFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         // turn to AddNewsActivity
-        btn_china.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(getActivity(), ChinaActivity.class);
-                startActivity(intent);
-            }
-        });
 
         btn_ha.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +67,15 @@ public class HomeFragment extends Fragment {
             public void onClick(View view) {
 
                 Intent intent = new Intent(getActivity(), TipsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_world.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getActivity(), MYActivity.class);
                 startActivity(intent);
             }
         });
