@@ -7,7 +7,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:paddingTop="30dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
         android:orientation="vertical">
 
         <TextView
@@ -23,13 +25,18 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="70dp"/>
+            android:layout_height="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cases"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:textColor="@color/grey"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
@@ -40,19 +47,25 @@
             android:id="@+id/tvCases"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="0"
-            android:textSize="25sp"
+            android:textSize="24sp"
             android:textColor="@color/red"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:textAllCaps="true"
             android:textAlignment="center"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Today Cases"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:textColor="@color/grey"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
@@ -63,19 +76,25 @@
             android:id="@+id/tvTodayCases"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="0"
-            android:textSize="25sp"
+            android:textSize="24sp"
             android:textColor="@color/red"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:textAllCaps="true"
             android:textAlignment="center"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Deaths"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:textColor="@color/grey"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
@@ -86,19 +105,25 @@
             android:id="@+id/tvDeaths"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="0"
-            android:textSize="25sp"
+            android:textSize="24sp"
             android:textColor="@color/red"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:textAllCaps="true"
             android:textAlignment="center"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Today Deaths"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:textColor="@color/grey"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
@@ -109,19 +134,25 @@
             android:id="@+id/tvTodayDeaths"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="0"
-            android:textSize="25sp"
+            android:textSize="24sp"
             android:textColor="@color/red"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:textAllCaps="true"
             android:textAlignment="center"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Recovered"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:textColor="@color/grey"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
@@ -132,19 +163,25 @@
             android:id="@+id/tvRecovered"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="0"
-            android:textSize="25sp"
+            android:textSize="24sp"
             android:textColor="@color/red"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:textAllCaps="true"
             android:textAlignment="center"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Today Recovered"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:textColor="@color/grey"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
@@ -156,12 +193,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize="25sp"
+            android:textSize="24sp"
             android:textColor="@color/red"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:textAllCaps="true"
             android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/bottom_white"
+            android:text="Come Back to Homepage"/>
 
     </LinearLayout>
 

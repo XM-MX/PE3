@@ -2,6 +2,7 @@ package com.example.pe3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,29 +12,26 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.pe3.Retrofit.MYActivity;
+
 public class HealthAssessmentActivity extends AppCompatActivity {
 
     private RadioGroup radGupDemo1;
-    private RadioButton Radbtn1A;
-    private RadioButton Radbtn1B;
+    private RadioButton Radbtn1A, Radbtn1B;
 
     private RadioGroup radGupDemo2;
-    private RadioButton Radbtn2A;
-    private RadioButton Radbtn2B;
+    private RadioButton Radbtn2A, Radbtn2B;
 
     private RadioGroup radGupDemo3;
-    private RadioButton Radbtn3A;
-    private RadioButton Radbtn3B;
+    private RadioButton Radbtn3A, Radbtn3B;
 
     private RadioGroup radGupDemo4;
-    private RadioButton Radbtn4A;
-    private RadioButton Radbtn4B;
+    private RadioButton Radbtn4A, Radbtn4B;
 
     private RadioGroup radGupDemo5;
-    private RadioButton Radbtn5A;
-    private RadioButton Radbtn5B;
+    private RadioButton Radbtn5A, Radbtn5B;
 
-    private Button btnMainRefer;
+    private Button btnMainRefer, btn_back;
     private TextView tvMainResult;
 
     @Override
@@ -113,6 +111,15 @@ public class HealthAssessmentActivity extends AppCompatActivity {
 
         });
 
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void initView() {
@@ -138,6 +145,7 @@ public class HealthAssessmentActivity extends AppCompatActivity {
         Radbtn5B = (RadioButton) findViewById(R.id.btn5N);
 
         btnMainRefer = (Button) findViewById(R.id.btn_submit);
+        btn_back = (Button) findViewById(R.id.btn_back);
         tvMainResult = (TextView) findViewById(R.id.tvMainResult);
     }
 }

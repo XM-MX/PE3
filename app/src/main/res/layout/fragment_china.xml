@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="Stactics"
+        android:text="Home Page"
         android:textColor="#000000"
         android:textSize="34sp"
         android:textStyle="normal"
@@ -98,9 +98,8 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/dropdownbox"
         android:scaleType="centerCrop"
-        android:background="#00000000"/>
+        android:background="@drawable/ic_baseline_global"/>
 
     <ImageView
         android:id="@+id/imageView"

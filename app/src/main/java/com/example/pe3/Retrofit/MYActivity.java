@@ -2,12 +2,17 @@ package com.example.pe3.Retrofit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.pe3.HomeActivity;
 import com.example.pe3.R;
+import com.example.pe3.RetrievePasswordPart1Activity;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -19,12 +24,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MYActivity extends AppCompatActivity {
 
-    TextView tvCases;
-    TextView tvTodayCases;
-    TextView tvDeaths;
-    TextView tvTodayDeaths;
-    TextView tvRecovered;
-    TextView tvTodayRecovered;
+    TextView tvCases, tvTodayCases, tvDeaths, tvTodayDeaths, tvRecovered, tvTodayRecovered;
+    Button btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,16 @@ public class MYActivity extends AppCompatActivity {
         tvTodayDeaths = findViewById(R.id.tvTodayDeaths);
         tvRecovered = findViewById(R.id.tvRecovered);
         tvTodayRecovered = findViewById(R.id.tvTodayRecovered);
+        btn_back = findViewById(R.id.btn_back);
         fetchApiDataUsingRetrofit();
+
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

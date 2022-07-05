@@ -13,9 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import com.example.pe3.ChinaActivity;
 import com.example.pe3.HealthAssessmentActivity;
 import com.example.pe3.R;
+import com.example.pe3.Retrofit.MYActivity;
 import com.example.pe3.TipsActivity;
 import com.google.android.material.tabs.TabLayout;
 
@@ -65,7 +65,7 @@ public class ChinaFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity(), ChinaActivity.class);
+                Intent intent = new Intent(getActivity(), MYActivity.class);
                 startActivity(intent);
             }
         });

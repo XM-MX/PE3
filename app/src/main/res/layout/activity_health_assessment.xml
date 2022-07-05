@@ -9,6 +9,9 @@
     <TableLayout
         android:layout_width="409dp"
         android:layout_height="649dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_health">
@@ -21,24 +24,44 @@
             android:id="@+id/tv_health"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:gravity="center"
             android:text="Health Assessment"
-            android:textColor="@color/black"
+            android:textColor="@color/red"
             android:textSize="36sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
         <TextView
+            android:id="@+id/tv_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Qusetion 1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Qusetion1 \nDo you have a headache, sore throat or congestion?"
+            android:text="Do you have a headache, sore throat or congestion?"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -47,35 +70,57 @@
             android:id="@+id/radGup1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/btn1Y"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="40dp"
                 android:text="Yes"
+                android:textColor="@color/red"
                 android:checked="true" />
+
             <RadioButton
                 android:id="@+id/btn1N"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="90dp"
                 android:text="No"/>
         </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
         <TextView
+            android:id="@+id/tv_q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Qusetion 2"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Qusetion2 \nDo you have a fever？"
+            android:text="Do you have a fever？"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -84,34 +129,56 @@
             android:id="@+id/radGup2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/btn2Y"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="40dp"
                 android:text="Yes"
+                android:textColor="@color/red"
                 android:checked="true" />
+
             <RadioButton
                 android:id="@+id/btn2N"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="90dp"
                 android:text="No"/>
         </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Qusetion 3"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Qusetion3 \nDo you have a dry cough and feel chest tightness？"
+            android:text="Do you have a dry cough and feel chest tightness？"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -120,34 +187,56 @@
             android:id="@+id/radGup3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/btn3Y"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="40dp"
                 android:text="Yes"
+                android:textColor="@color/red"
                 android:checked="true" />
+
             <RadioButton
                 android:id="@+id/btn3N"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="90dp"
                 android:text="No"/>
         </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_q4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Qusetion 4"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Qusetion4 \nDo you feel pain all over your body？"
+            android:text="Do you feel pain all over your body？"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -156,34 +245,56 @@
             android:id="@+id/radGup4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/btn4Y"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="40dp"
                 android:text="Yes"
+                android:textColor="@color/red"
                 android:checked="true" />
+
             <RadioButton
                 android:id="@+id/btn4N"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="90dp"
                 android:text="No"/>
         </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_q5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Qusetion 5"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Qusetion5 \nDo you feel pain all over your body？"
+            android:text="Do you feel pain all over your body？"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -192,51 +303,61 @@
             android:id="@+id/radGup5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/btn5Y"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="40dp"
                 android:text="Yes"
+                android:textColor="@color/red"
                 android:checked="true" />
+
             <RadioButton
                 android:id="@+id/btn5N"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="90dp"
                 android:text="No"/>
         </RadioGroup>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/btn_submit"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/bottom_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bottom_red"
             android:letterSpacing="0.3"
             android:text="Submit"
-            android:textColor="@color/white"
+            android:textColor="@color/red"
             android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/btn_modify"
-            app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvMainResult"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:text="Result"
+            android:textColor="@color/red"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bottom_white"
+            android:letterSpacing="0.3"
+            android:text="Come Back To Homepage"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
     </TableLayout>
 

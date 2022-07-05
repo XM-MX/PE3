@@ -18,9 +18,6 @@
             android:name=".TipsActivity"
             android:exported="false" />
         <activity
-            android:name=".ChinaActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

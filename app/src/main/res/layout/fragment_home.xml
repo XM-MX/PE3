@@ -98,9 +98,8 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/dropdownbox"
         android:scaleType="centerCrop"
-        android:background="#00000000"/>
+        android:background="@drawable/ic_baseline_global"/>
 
     <ImageView
         android:id="@+id/imageView"
