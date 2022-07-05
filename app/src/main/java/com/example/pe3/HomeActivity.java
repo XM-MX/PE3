@@ -9,11 +9,9 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 import com.example.pe3.Fragment.BlankFragment;
-import com.example.pe3.Fragment.ChinaFragment;
-import com.example.pe3.Fragment.HomeFragment;
 import com.example.pe3.Fragment.LocationFragment;
 import com.example.pe3.Fragment.QAFragment;
-import com.example.pe3.Fragment.ScanFragment;
+import com.example.pe3.Scan.ScanFragment;
 import com.example.pe3.Fragment.UserInformationFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
