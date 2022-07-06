@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,7 +32,7 @@ import java.util.LinkedList;
 public class ScanFragment extends Fragment {
 
 
-    Button btnScan;
+    ImageButton btnScan;
     TextView tv_qr_readTxt;
 
     private RecyclerView recyclerView;
